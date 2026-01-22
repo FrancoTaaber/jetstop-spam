@@ -26,7 +26,7 @@ cp "${PLUGIN_DIR}/jetstop-spam.php" "${DIST_DIR}/"
 cp -r "${PLUGIN_DIR}/includes" "${DIST_DIR}/"
 cp -r "${PLUGIN_DIR}/admin" "${DIST_DIR}/"
 cp -r "${PLUGIN_DIR}/assets" "${DIST_DIR}/"
-cp -r "${PLUGIN_DIR}/languages" "${DIST_DIR}/"
+cp -r "${PLUGIN_DIR}/languages" "${DIST_DIR}/" 2>/dev/null || true
 cp "${PLUGIN_DIR}/README.md" "${DIST_DIR}/" 2>/dev/null || true
 cp "${PLUGIN_DIR}/LICENSE" "${DIST_DIR}/" 2>/dev/null || true
 
