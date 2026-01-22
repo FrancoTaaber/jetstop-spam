@@ -1,0 +1,23 @@
+/**
+ * Jetstop Spam - Honeypot Styles
+ * These styles hide the honeypot fields from real users.
+ */
+
+.jetstop-hp-wrap {
+	position: absolute !important;
+	left: -9999px !important;
+	top: -9999px !important;
+	width: 1px !important;
+	height: 1px !important;
+	overflow: hidden !important;
+	opacity: 0 !important;
+	pointer-events: none !important;
+	visibility: hidden !important;
+}
+
+/* Additional selectors for generated fields */
+[name*="jetstop_hp"],
+input[name^="website_url"][tabindex="-1"] {
+	position: absolute !important;
+	left: -9999px !important;
+}

@@ -1,0 +1,197 @@
+/**
+ * Admin styles for Jetstop Spam
+ */
+
+.jetstop-wrap { max-width: 1400px; }
+.jetstop-wrap h1 { display: flex; align-items: center; gap: 10px; }
+.jetstop-wrap h1 .dashicons { font-size: 30px; width: 30px; height: 30px; }
+
+/* Stats Grid */
+.jetstop-stats-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 20px;
+	margin: 20px 0;
+}
+
+.jetstop-stat-card {
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	border-radius: 4px;
+	padding: 25px;
+	text-align: center;
+}
+
+.jetstop-stat-number {
+	font-size: 42px;
+	font-weight: 600;
+	color: #1d2327;
+	line-height: 1;
+}
+
+.jetstop-stat-label {
+	color: #646970;
+	margin-top: 8px;
+}
+
+/* Cards */
+.jetstop-card {
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	border-radius: 4px;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+.jetstop-card h2 {
+	margin-top: 0;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #eee;
+}
+
+/* Dashboard Grid */
+.jetstop-dashboard-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 20px;
+}
+
+.jetstop-count { text-align: right; font-weight: 600; }
+.jetstop-empty { color: #646970; font-style: italic; }
+
+/* Integrations List */
+.jetstop-integrations-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.jetstop-integrations-list li {
+	padding: 8px 0;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.jetstop-integrations-list .dashicons-yes-alt { color: #00a32a; }
+.jetstop-integrations-list .dashicons-minus { color: #dba617; }
+.jetstop-integrations-list .dashicons-no { color: #d63638; }
+.jetstop-integrations-list small { color: #646970; }
+
+.jetstop-integration-summary {
+	margin-top: 15px;
+	padding-top: 15px;
+	border-top: 1px solid #eee;
+	font-weight: 500;
+}
+
+/* Quick Links */
+.jetstop-quick-links {
+	display: flex;
+	gap: 10px;
+	margin-top: 20px;
+}
+
+.jetstop-quick-links .button {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+
+/* Form */
+.jetstop-form .form-table th { width: 200px; }
+
+/* Integrations Grid */
+.jetstop-integrations-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+	gap: 10px;
+	margin-top: 15px;
+}
+
+.jetstop-integration-item {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	padding: 10px;
+	background: #f6f7f7;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.jetstop-integration-item:hover { background: #f0f0f1; }
+.jetstop-integration-item.unavailable { opacity: 0.6; }
+.jetstop-integration-item .unavailable-note { color: #646970; font-size: 11px; margin-left: auto; }
+
+/* Save Status */
+.jetstop-save-status {
+	margin-left: 15px;
+	font-weight: 500;
+}
+
+.jetstop-save-status.success { color: #00a32a; }
+.jetstop-save-status.error { color: #d63638; }
+
+/* Blacklist Grid */
+.jetstop-blacklist-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	gap: 20px;
+}
+
+/* Log Controls */
+.jetstop-log-controls {
+	display: flex;
+	gap: 10px;
+	margin-bottom: 15px;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.jetstop-log-controls select,
+.jetstop-log-controls input[type="text"] {
+	min-width: 150px;
+}
+
+/* Log Table */
+#jetstop-log-table .column-date { width: 160px; }
+#jetstop-log-table .column-source { width: 140px; }
+#jetstop-log-table .column-reason { width: 140px; }
+#jetstop-log-table .column-ip { width: 130px; }
+#jetstop-log-table .column-actions { width: 80px; }
+
+.jetstop-reason-badge {
+	display: inline-block;
+	padding: 3px 8px;
+	border-radius: 3px;
+	font-size: 12px;
+	background: #f0f0f1;
+}
+
+.jetstop-delete-entry { color: #d63638; cursor: pointer; }
+.jetstop-delete-entry:hover { text-decoration: underline; }
+
+/* Pagination */
+.jetstop-pagination {
+	display: flex;
+	gap: 5px;
+	margin-top: 15px;
+}
+
+.jetstop-pagination .page-btn {
+	padding: 5px 12px;
+	border: 1px solid #c3c4c7;
+	background: #fff;
+	cursor: pointer;
+	border-radius: 3px;
+}
+
+.jetstop-pagination .page-btn.current {
+	background: #2271b1;
+	color: #fff;
+	border-color: #2271b1;
+}
+
+.jetstop-pagination .page-btn:hover:not(.current) {
+	background: #f0f0f1;
+}

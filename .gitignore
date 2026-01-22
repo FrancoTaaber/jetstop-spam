@@ -1,0 +1,37 @@
+# Build
+/build/
+*.zip
+
+# Dependencies
+/vendor/
+/node_modules/
+
+# IDE
+.idea/
+.vscode/
+*.sublime-*
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+
+# Environment
+.env
+.env.*
+
+# Testing
+/tests/
+coverage/
+.phpunit.result.cache
+
+# Misc
+*.bak
+*.tmp
+.cache/
